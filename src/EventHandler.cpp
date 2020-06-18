@@ -53,10 +53,7 @@ void EventHandler::mousePress(int x, int y) {
         if(m_pBoard->checkWin())
         {
             std::cout << "WIN DETECTED" << std::endl;
-            m_pBoard->m_pScreen->clear();
-            m_pBoard->init();
-            m_pBoard->drawBoard();
-            m_pBoard->m_pScreen->update();
+            m_pBoard->newGame();
             return;
         }
     }
@@ -64,10 +61,7 @@ void EventHandler::mousePress(int x, int y) {
     if ( m_pBoard->checkCatsGame() )
     {
         std::cout << "CAT'S GAME DETECTED" << std::endl;
-        m_pBoard->m_pScreen->clear();
-        m_pBoard->init();
-        m_pBoard->drawBoard();
-        m_pBoard->m_pScreen->update();
+        m_pBoard->newGame();
         return;
     }
 }

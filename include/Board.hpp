@@ -40,6 +40,7 @@ public:
     int getTurn();
     void nextTurn();
     void colorSquare(int x, int y, int state);
+    void newGame();
 };
 
 

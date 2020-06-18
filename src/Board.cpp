@@ -329,4 +329,12 @@ void Board::colorSquare(int x, int y, int state) {
     
 }
 
+void Board::newGame() 
+{
+    m_pScreen->clear();
+    init();
+    drawBoard();
+    m_pScreen->update();
+}
+
 
