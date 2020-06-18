@@ -10,8 +10,9 @@
 				"C:\\Users\\zackm\\Code\\SDL2\\include",
 				"/I",
 				"include",
-				//"/Zi",
+				"/Zi",
 				"/EHsc",
+				"src/main.cpp",
 				"src/*.cpp",
 				"lib/*.lib"
 			],
