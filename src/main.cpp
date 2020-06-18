@@ -15,18 +15,23 @@ int main(int argc, char *argv[])
 	EventHandler *eventHandler = new EventHandler(board);
 
 
-	board->init();
-	screen->init("Tic Tac Toe");
-	screen->update();
 	
+	screen->init("Tic Tac Toe");
+	
+	board->init();
+	screen->update();
+	board->drawBoard();
+	screen->update();
 	while(eventHandler->processEvents())
 	{
 		// keep looping until close
 
 	}
 	screen->close();
-	delete screen;
+	
+	delete eventHandler;
 	delete board;
+	delete screen;
 
 	return 0;
 }

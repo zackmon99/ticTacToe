@@ -10,6 +10,6 @@ public:
     EventHandler(Board *board);
     ~EventHandler();
     bool processEvents();
-    void mousePress(SDL_MouseButtonEvent& b);
+    void mousePress(int x, int y);
 };
 
